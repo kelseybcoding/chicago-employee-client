@@ -1,0 +1,11 @@
+<h1>Food Inspections</h1>
+<% @inspections.each do |inspection| %>
+	<h2><%= inspection["dba_name"] %></h2>
+	<h2><%= inspection["facility_type"] %></h2>
+	<h2><%= inspection["risk"] %></h2>
+	<h2><%= inspection["address"] %></h2>
+	<h2><%= inspection["city"] %></h2>
+	<h3>Results: <%= inspection["results"] %></h3>
+	<br>
+
+<% end %>
